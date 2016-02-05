@@ -1,8 +1,11 @@
-
 {% for pic in site.data.content.your_pics %}
   {% if pic.asset == true %}
-    <img src="/assets/images/{{pic.link}}" alt="{{pic.caption}}">
+  <div class="pic" style="background-image: url('./assets/images/{{pic.link}}')">
   {% else %}
-    <img src="{{pic.link}}" alt="{{pic.caption}}">
+  <div class="pic" style="background-image: url('{{pic.link}}')">
   {% endif %}
+    <div class="ch-info">
+      <p>{{pic.caption}}</p>
+    </div>
+  </div>
 {% endfor %}

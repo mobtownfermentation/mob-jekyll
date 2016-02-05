@@ -51,6 +51,11 @@ about:
         company would need more help, Adam and Sergio pitched the idea to their childhood friend
         Sid in May 2014. Mobtown Fermentation and Wild Kombucha were born.
 
+#map taglines
+map:
+  headline: Find Wild Kombucha at a location near you!
+  your_location: (Or visit us at 3600 Hickory Ave. in Baltimore)
+
 #picture gallery
 gallery_pics:
   - p:
