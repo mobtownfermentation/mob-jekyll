@@ -17,6 +17,29 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: WILDKombucha
 github_username: mobtownfermentation
 about:
+  title: Brewed in Baltimore
+  text:
+    - p: >
+        Adam and Sergio first learned about kombucha in 2000 when their parents
+        started brewing it at home. Sharing their curiosity and passion for fermentation,
+        brewing kombucha became a family affair at their home in Baltimore. A few years later
+        in 2009, when Sergio and Adam’s parents moved to Peru, they left the fermentation
+        canisters and brewing tools with Adam. One day, while cleaning out the garage, he
+        came across the kombucha equipment. He began reminiscing about how he used to brew
+        kombucha with his family, and decided to give it a go. He was hooked. Seeing the
+        brewing process as a puzzle, Adam began working diligently to master the art. Initially
+        using friends and family as guinea pigs, he first perfected the process his parents taught
+        him, and then began exploring the use of different flavors. He realized that the use of
+        certain flavors allowed him to add a new dimension to the drink, while still highlighting
+        the crisp and bubbly tones that make kombucha unique. It did not take long for his friends
+        to taste the appeal. Over the next two years he supplied his drink to family, friends, and
+        a group of Johns Hopkins students that had become regulars.  As orders grew larger, and Adam
+        grew busier with his job and band, he looked to Sergio to help out since he already knew the
+        process. Eventually, brewing began taking up their weekends, friends of friends were ordering
+        consistently, and word of their kombucha had spread throughout Hampden. Knowing that the
+        company would need more help, Adam and Sergio pitched the idea to their childhood friend
+        Sid in May 2014. Mobtown Fermentation and Wild Kombucha were born.
+main_info:
   - p:
     title: Mobtown Fermentation
     body: >

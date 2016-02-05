@@ -1,6 +1,4 @@
-{% for p in site.about %}
-<div>
-  <h2 style="display:inline">{{p.title}}</h2>
-  <p style="display:inline">{{p.body}}</p>
-</div>
+<h2>{{site.about.title}}</h2>
+{% for block in site.about.text %}
+  <p>{{block.p}}</p>
 {% endfor %}
