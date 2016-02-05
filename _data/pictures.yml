@@ -1,0 +1,85 @@
+#main logo
+main_logo:
+  asset: true
+  link: newbg2.png
+
+#picture gallery
+gallery_pics:
+  - p:
+    asset: true
+    link: bottleline.png
+    caption: Visit us at 3600 Hickory Ave in Hampden
+  - p:
+    asset: true
+    link: bottlecap.png
+    caption: Each one of our bottles is hand capped
+  - p:
+    asset: true
+    link: elderberry.png
+    caption: Try our new elderberry flavor
+  - p:
+    asset: true
+    link: fizz.png
+    caption: Enjoy Wild Kombucha in a glass
+  - p:
+    asset: true
+    link: cocktail.png
+    caption: Wild Kombucha makes a great mixer
+  - p:
+    asset: true
+    link: kombucha-glass.png
+    caption: Jump start your morning with Wild Kombucha
+
+#pictures of you guys
+your_pics:
+  - p:
+    asset: true
+    link: adam.png
+    caption: Adam Bufano
+  - p:
+    asset: true
+    link: sergio.png
+    caption: Sergio Malarin
+  - p:
+    asset: true
+    link: sid.png
+    caption: Sid Sharma
+
+#kombucha history
+history_pics:
+  - p:
+    asset: true
+    link: hist1.png
+    caption: >
+      Kombucha is thought to have originated in Asia, during the rule of the Tsin Dynasty.
+      It was called the Tea of Immortality, and was believed to give everlasting life to
+      those who drank it.
+    year: ~220 B.C.
+  - p:
+    asset: true
+    link: hist2.png
+    caption: >
+      Merchants travelling the Silk Road introduced Kombucha to India, Japan and Russia.
+      Because of the many health benefits associated with drinking kombucha, the tea quickly
+      became customary in many households across Asia. As a result of its rapid spread,
+      kombucha became known by several different names including Tea Kvass, Mushroom Tea,
+      Miracle Tea, and Elixer of Long Life.
+    year: ~200 B.C.
+  - p:
+    asset: true
+    link: hist3.png
+    caption: >
+      A Korean physician is said to have cured the ailing Japanese Emperor Ingyo, using
+      a fermented tea beverage. The result was a widespread consumption of kombucha throughout
+      Japan. The Samurai class were particularly fond of kombucha. They considered it a form of
+      Chi, a revitalizing life force, and would carry flasks of it into battle.
+    year: ~415 A.D.
+  - p:
+    asset: true
+    link: hist4.png
+    caption: >
+      Mongol warriors in the armies of Genghis Khan drank fermented beverages to fuel them on
+      military campaigns. At the height of it's power, the Mongol Empire stretched all the way
+      from Hungary to China, so Mongol riders could sometimes be away from home and on the go
+      for years on end.
+    year: ~1220 A.D.

@@ -2,6 +2,40 @@
   font-family:'Bitter', Times, Serif;
   font-size: 16px;
 }
+body{
+  background: -webkit-linear-gradient(
+    rgba(152,0,15,0.45),
+    rgba(143, 52, 1,0.45),
+    rgba(135, 110, 1, 0.45),
+    rgba(143, 52, 1,0.45),
+    rgba(152,0,15,0.45)),
+  url('../assets/images/symphony.png')repeat;
+  background: -o-linear-gradient(
+    rgba(152,0,15,0.45),
+    rgba(143, 52, 1,0.45),
+    rgba(135, 110, 1, 0.45),
+    rgba(143, 52, 1,0.45),
+    rgba(152,0,15,0.45)),
+  url('../assets/images/symphony.png')repeat;
+  background: -moz-linear-gradient(
+    rgba(152,0,15,0.45),
+    rgba(143, 52, 1,0.45),
+    rgba(135, 110, 1, 0.45),
+    rgba(143, 52, 1,0.45),
+    rgba(152,0,15,0.45)),
+  url('../assets/images/symphony.png')repeat;
+  background: linear-gradient(
+    rgba(152,0,15,0.45),
+    rgba(143, 52, 1,0.45),
+    rgba(135, 110, 1, 0.45),
+    rgba(143, 52, 1,0.45),
+    rgba(152,0,15,0.45)),
+  url('../assets/images/symphony.png')repeat;
+  /*background pattern from subtlepatterns.com*//* Standard syntax */
+}
+.row{
+  margin-bottom:2em;
+}
 .main-info{
   margin:20px auto;
 }
