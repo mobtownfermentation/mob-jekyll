@@ -8,14 +8,40 @@
 # Site settings
 title: Mobtown Fermentation | Wild Kombucha
 email: mobtownfermentation@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Mobtown Fermentation brews Wild Kombucha right here in Baltimore.
   Our goal is to share this delicious and healthy kombucha with our community.
 keywords: Wild Kombucha Mobtown Fermentation Baltimore health delicious fermented
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: WILDKombucha
-github_username:  mobtownfermentation
+github_username: mobtownfermentation
+about:
+  - p:
+    title: Mobtown Fermentation
+    body: >
+      is a small Baltimore based company specializing in the art of fermentation.
+      We brew our own unique brand of kombucha and currently have three flavors available:
+      mango-peach, ginger-grapefruit, and elderberry. Our goal is to share this delicious
+      and healthy drink with our community.
+  - p:
+    title: Our Mission
+    body: >
+      is to promote a healthier lifestyle by sharing our delicious and completely natural
+      kombucha with our friends and community at affordable prices. Our unique blend is
+      geared towards making Wild Kombucha enjoyable to the average Joe in addition to long
+      time kombucha drinkers.
+  - p:
+    title: Kombucha
+    body: >
+      is a fermented drink that has been brewed and consumed for over two millennia. The
+      revitalizing effects of the beverage were recognized and used by many cultures around
+      the world. Modern day studies on the health benefits of consuming fermented foods have
+      only proven our ancestors right. Kombucha is loaded with vitamins and acids that help
+      strengthen the immune system. It has probiotics and enzymes that are known to bolster
+      digestion and replenish the good bacteria in your gut. Kombucha also boosts liver
+      function, because it contains the same acids that the liver releases to eliminate
+      toxins from the body.
 
 # Build settings
 markdown: kramdown
