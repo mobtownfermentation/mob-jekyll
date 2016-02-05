@@ -1,6 +1,8 @@
-{% for p in site.data.content.main_info %}
-<div class="main-info">
-  <h2>{{p.title}}</h2>
-  <p>{{p.body}}</p>
+<div class="twelve columns">
+  {% for p in site.data.content.main_info %}
+  <div class="main-info">
+    <h2>{{p.title}}</h2>
+    <p>{{p.body}}</p>
+  </div>
+  {% endfor %}  
 </div>
-{% endfor %}

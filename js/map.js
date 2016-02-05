@@ -142,6 +142,7 @@ points.eachLayer(function(loc){
   city.textContent = loc.feature.properties.city;
   var phone = document.createElement("p");
   phone.textContent = loc.feature.properties.phone;
+
   var pic = document.createElement("div");
   pic.className = "liPic";
   pic.style['background-image'] = "url('"+loc.feature.properties.pic+"')";
@@ -150,6 +151,8 @@ points.eachLayer(function(loc){
   li.appendChild(city);
   li.appendChild(phone);
   li.appendChild(pic);
+
+  li.className = "cf";
 
   var marker = L.marker([loc.feature.geometry.coordinates[1],loc.feature.geometry.coordinates[0]])
     .setIcon(L.divIcon({

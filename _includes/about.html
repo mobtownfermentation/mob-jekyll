@@ -1,4 +1,7 @@
-<h2>{{site.data.content.about.title}}</h2>
-{% for block in site.data.content.about.text %}
-  <p>{{block.p}}</p>
-{% endfor %}
+<div class="twelve columns">
+  <h2>{{site.data.content.about.title}}</h2>
+  {% for block in site.data.content.about.text %}
+    <p>{{block.p}}</p>
+  {% endfor %}
+  <p class="cheers">- Cheers!</p>  
+</div>
