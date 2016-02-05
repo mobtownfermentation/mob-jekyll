@@ -2,3 +2,26 @@
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
+<script>
+  var locations = {
+  "type": "FeatureCollection",
+  "features": [
+  {% for location in site.data.locations %}
+  {
+    "type": "Feature",
+    "properties": {
+      "title":"{{location.title}}",
+      "street":"{{location.street}}",
+      "city":"{{location.city}}",
+      "link":"{{location.link}}",
+      "phone":"{{location.phone}}",
+      "pic":"{{location.pic}}"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates":[{{location.coords}}]
+    }
+  },
+  {% endfor %}
+]}
+</script>
