@@ -1,0 +1,7 @@
+{% for pic in site.data.content.history_pics %}
+  {% if pic.asset == true %}
+    <img src="/assets/images/{{pic.link}}" alt="{{pic.caption}}">
+  {% else %}
+    <img src="{{pic.link}}" alt="{{pic.caption}}">
+  {% endif %}
+{% endfor %}
