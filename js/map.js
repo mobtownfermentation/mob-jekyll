@@ -152,7 +152,7 @@ points.eachLayer(function(loc){
   li.appendChild(phone);
   li.appendChild(pic);
 
-  li.className = "cf";
+  li.className = "u-cf";
 
   var marker = L.marker([loc.feature.geometry.coordinates[1],loc.feature.geometry.coordinates[0]])
     .setIcon(L.divIcon({

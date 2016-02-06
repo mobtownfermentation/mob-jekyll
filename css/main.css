@@ -1,6 +1,5 @@
 *{
   font-family:'Bitter', Times, Serif;
-  font-size: 16px;
 }
 body{
   background: -webkit-linear-gradient(
@@ -33,21 +32,41 @@ body{
   url('../assets/images/symphony.png')repeat;
   /*background pattern from subtlepatterns.com*//* Standard syntax */
 }
-.row{
-  margin-bottom:2em;
+.main-info-row .columns{
+  background: -webkit-linear-gradient(
+    rgba(152,0,15,0.75),
+    rgba(143, 52, 1,0.75));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.row:after,.cf{
-  content:'';
-  clear:both;
-  display:table;
+.about-row .columns{
+  background: -webkit-linear-gradient(
+    rgba(143, 52, 1,0.75),
+    rgba(143, 52, 1,0.75)),
+  url('../assets/images/symphony.png')repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.map-row .columns{
+  background: -webkit-linear-gradient(
+    rgba(135, 110, 1,0.75),
+    rgba(143, 52, 1,0.75)),
+  url('../assets/images/symphony.png')repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-row .columns{
+  background: -webkit-linear-gradient(
+    rgba(143, 52, 1,0.75),
+    rgba(152,0,15,0.75)),
+  url('../assets/images/symphony.png')repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main-info{
   margin:20px auto;
 }
-.main-info h2{
-  font-size:1.6em;
-}
-.main-info h2,
+.main-info h3,
 .main-info p{
   display:inline;
 }
@@ -170,10 +189,17 @@ body{
   border-radius:50%;
   background-color:#fff;
   border:2px solid #030303;
-  color:#030303;
+  color:black;
   opacity:0.75;
   padding-top:5px;
   text-align:center;
   font-size:1.2em;
   font-family:"Bitter",serif;
+}
+footer{
+  text-align:center;
+}
+footer img{
+  vertical-align: middle;
+  height:60px;
 }
