@@ -1,24 +1,32 @@
-<h1>Get in touch! Place an order or just say hi!</h1>
-<div id="contactTable">
-    <h2>Fermentation takes time.</h2>
-    <p>If you place an order today, we can fill it as soon as <b><span id="fillDate"></span></b></p><br>
-    <h2>For Questions, call or text</h2>
-    <p><b>Adam:</b> (410) 277-1786</p>
-    <p><b>Sergio:</b> (240) 491-2083</p><br>
-    <h2>Or email us at</h2>
-    <p>mobtownfermentation<wbr>@gmail.com</p>
-</div><!--contact table-->
-<div id="formContainer">
-    <h2>Please send your order requests below:</h2>
-    <span style="float:right;font-size:14px;color:red;margin:0 10px 10px 0;">** all fields required</span>
-    <form id="contactForm" action="//formspree.io/mobtownfermentation@gmail.com" method="POST">
-        <label for="name">Contact: </label><input class="fillout empty" id="name" type="text" name="name" placeholder="Your name/company" required /><br>
-        <label for="_replyto">Email: </label><input class="fillout empty" id="_replyto" type="email" name="_replyto" placeholder="Your email address" required /><br>
-        <label for="_subject">Subject: </label><input class="fillout empty" id="_subject" type="text" name="_subject" placeholder="Message subject" required /><br>
-        <label for="datepicker">Deliver: </label><input class="fillout empty" name="deliver" type="text" id="datepicker" placeholder="Pick a date" required /><br>
-        <label for="message">Message: </label><textarea class="fillout empty" id="message" name="message" cols="40" rows="6" placeholder="Your message" required></textarea>
-        <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_next" value="" />
-        <input type="submit" value="Submit" id="submit"/>
-    </form>
+<div class="twelve columns">
+  <h2>Get in touch! Place an order or just say hi!</h2>
+</div>
+<div class="row full">
+  <div class="six columns">
+    <div id="contactTable">
+      <h3>Fermentation takes time.</h3>
+      <p>If you place an order today, we can fill it as soon as <b><span id="fillDate"></span></b></p><br>
+      <h3>For Questions, call or text</h3>
+      <p><b>Adam:</b> (410) 277-1786</p>
+      <p><b>Sergio:</b> (240) 491-2083</p><br>
+      <h3>Or email us at</h3>
+      <p>mobtown<wbr>fermentation<wbr>@gmail.com</p>
+    </div>
+  </div>
+  <div class="six columns">
+    <div id="formContainer">
+      <h3>Please send your order requests below:</h3>
+      <span style="float:right;font-size:14px;color:red;margin:0 10px 10px 0;">** all fields required</span>
+      <form id="contactForm" action="//formspree.io/mobtownfermentation@gmail.com" method="POST">
+          <label for="name">Contact: </label><input class="fillout empty" id="name" type="text" name="name" placeholder="Your name/company" required /><br>
+          <label for="_replyto">Email: </label><input class="fillout empty" id="_replyto" type="email" name="_replyto" placeholder="Your email address" required /><br>
+          <label for="_subject">Subject: </label><input class="fillout empty" id="_subject" type="text" name="_subject" placeholder="Message subject" required /><br>
+          <label for="datepicker">Deliver: </label><input class="fillout empty" name="deliver" type="text" id="datepicker" placeholder="Pick a date" required /><br>
+          <label for="message">Message: </label><textarea class="fillout empty" id="message" name="message" cols="40" rows="6" placeholder="Your message" required></textarea>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_next" value="" />
+          <input type="submit" value="Submit" id="submit"/>
+      </form>
+    </div>
+  </div>
 </div>

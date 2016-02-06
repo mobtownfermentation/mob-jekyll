@@ -33,7 +33,7 @@
   width: 100%;
   /*max-width: 960px;*/
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -44,8 +44,11 @@
 .row:not(.full){
   max-width: 960px;
 }
+.row.full{
+  padding:0 20px;
+}
 .row.white{
-  background:rgba(255,255,255,0.25);
+  background:rgba(255,255,255,0.3);
 }
 .row:not(.white){
   background:none;
@@ -62,8 +65,8 @@
   }
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
+/* For devices larger than 700px */
+@media (min-width: 700px) {
   .container,header,footer {
     width: 100%; }/*80%*/
   .row:not(.full){
@@ -139,7 +142,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 2em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6em;
   font-weight: 400;}
 
