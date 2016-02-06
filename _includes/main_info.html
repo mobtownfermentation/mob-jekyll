@@ -1,7 +1,11 @@
 <div class="twelve columns">
   {% for p in site.data.content.main_info %}
   <div class="main-info">
-    <h3>{{p.title}}</h3>
+    {% if forloop.index == 1 %}
+      <h2>{{p.title}}</h2>
+    {% else %}
+      <h3>{{p.title}}</h3>
+    {% endif %}
     <p>{{p.body}}</p>
   </div>
   {% endfor %}

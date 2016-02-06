@@ -1,7 +1,7 @@
 #main logo
 main_logo:
   asset: true
-  link: newbg2.png
+  link: kombucha-header.png
 
 #picture gallery
 gallery_pics:

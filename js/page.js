@@ -69,6 +69,8 @@ $(document).ready(function(){
     var winHeight = $(window).height(); // get window height
     var docHeight = $(document).height(); // get doc height for last child
 
+    // console.log($(window).scrollTop(),scrollPos,winHeight,docHeight)
+
     // starts new timeout if new scroll triggered before first timeout finishes
     if (timer) {
       window.clearTimeout(timer);
@@ -77,13 +79,11 @@ $(document).ready(function(){
     timer = window.setTimeout(function() {
 
       var scrollNav = function() {
-        if ($(window).scrollTop() > (winHeight - 40)) {
-          $('.mainNav').addClass('navbar-fixed');
-          $('.mainNav').removeClass('navbar-absolute');
-        }
-        if ($(window).scrollTop() < (winHeight - 39)) {
-          $('.mainNav').removeClass('navbar-fixed');
-          $('.mainNav').addClass('navbar-absolute');
+        var breakpoint = $(aArray[0]).height() - 61;
+        if ($(window).scrollTop() > breakpoint) {
+           $('.mainNav').addClass('navbar-fixed').removeClass('navbar-absolute');
+        }else{
+          $('.mainNav').removeClass('navbar-fixed').addClass('navbar-absolute');
         }
       };
       scrollNav();
@@ -91,8 +91,8 @@ $(document).ready(function(){
       var activeNav = function() {
         for (var i=0; i < aArray.length; i++) {
           var secID = aArray[i]; // select nav href i
-          var secPos = $(secID).offset().top - 41; // get offset of that section from top of page - nav-height
-          var secHeight = $(secID).height() + 120; // get height of that section + padding-bottom
+          var secPos = $(secID).offset().top - 61; // get offset of that section from top of page - nav-height
+          var secHeight = $(secID).height() +20; // get height of that section + padding-bottom
           if (scrollPos >= secPos && scrollPos < (secPos + secHeight)) { //if looking at that section
             $("a[href='" + secID + "']").addClass("nav-active");
           } else {

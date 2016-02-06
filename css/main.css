@@ -39,46 +39,18 @@ body{
   url('../assets/images/symphony.png')repeat;
   /*background pattern from subtlepatterns.com*//* Standard syntax */
 }
-.main-info-row .columns{
-  background: -webkit-linear-gradient(
-    rgba(152,0,15,0.75),
-    rgba(143, 52, 1,0.75));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.about-row .columns{
-  background: -webkit-linear-gradient(
-    rgba(143, 52, 1,0.75),
-    rgba(143, 52, 1,0.75)),
-  url('../assets/images/symphony.png')repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-/*.map-row .columns{
-  background: -webkit-linear-gradient(
-    rgba(135, 110, 1,0.75),
-    rgba(143, 52, 1,0.75)),
-  url('../assets/images/symphony.png')repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}*/
-/*.contact-row .columns{
-  background: -webkit-linear-gradient(
-    rgba(143, 52, 1,0.75),
-    rgba(152,0,15,0.75)),
-  url('../assets/images/symphony.png')repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}*/
 header{
   text-align: center;
 }
 #main-logo{
+  position:relaitve;
   width:80%;
+  margin:1em auto 2.2em auto;
 }
-.main-info{
+.main-info,.about-block{
   margin:20px auto;
 }
+.main-info h2,
 .main-info h3,
 .main-info p{
   display:inline;
@@ -90,6 +62,11 @@ header{
   font-size:1.4em;
 }
 .gallery{
+  height:275px;
+  max-height: 275px;
+  overflow: hidden;
+}
+.gallery:not(.history){
   text-align: center;
 }
 .bump{
@@ -152,9 +129,16 @@ header{
     opacity: 1;
     transform: scale(1);
 }
+.map-row h2{
+  margin-bottom:0;
+}
+.map-row h3{
+  margin-bottom:1em;
+}
 #map{
   height:500px;
   width:100%;
+  border-radius:15px;
 }
 #mapAll{
   float:right;
@@ -164,7 +148,8 @@ header{
   width:100%;
   height:500px;
   overflow-y: scroll;
-  list-style: none;
+  list-style:none;
+  border-radius:15px;
 }
 #locations li p{
   margin:0;
@@ -219,6 +204,7 @@ input,textarea{
 
 
 footer{
+  margin:3em auto 1em auto;
   text-align:center;
 }
 footer img{
@@ -239,16 +225,18 @@ footer img{
   left:0;
   position: fixed;
   background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .nav-active {
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-  box-shadow: inset 0px -2px 0px 0px red;
+  background-color: #fff;
+  background-color: rgba(200, 200, 200, 0.6);
 }
 .mainNav {
   transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
   z-index: 10;
   width: 100%;
+  height:auto;
   /*overflow: hidden;*/
 }
 .mainNav ul {
@@ -259,7 +247,7 @@ footer img{
 .mainNav li {
   display: inline-block;
   width: auto;
-  height: 40px;
+  /*height: 40px;*/
   text-align: center;
 }
 .mainNav li:hover {
