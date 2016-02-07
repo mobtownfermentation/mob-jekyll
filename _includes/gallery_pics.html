@@ -1,4 +1,6 @@
-<div class="twelve columns">
+<div class="twelve columns wide">
+  <div class="btn left"> <- </div>
+  <div class="btn right"> -> </div>
   {% for pic in site.data.pictures.gallery_pics %}
     {% if pic.asset == true %}
     <div class="pic" style="background-image: url('./assets/images/{{pic.link}}')">
@@ -9,5 +11,5 @@
         <p>{{pic.caption}}</p>
       </div>
     </div>
-  {% endfor %}  
+  {% endfor %}
 </div>

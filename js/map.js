@@ -142,15 +142,17 @@ points.eachLayer(function(loc){
   city.textContent = loc.feature.properties.city;
   var phone = document.createElement("p");
   phone.textContent = loc.feature.properties.phone;
-
+  var text = document.createElement("div");
+  text.className = "liText";
   var pic = document.createElement("div");
   pic.className = "liPic";
   pic.style['background-image'] = "url('"+loc.feature.properties.pic+"')";
-  li.appendChild(title);
-  li.appendChild(street);
-  li.appendChild(city);
-  li.appendChild(phone);
+  text.appendChild(title);
+  text.appendChild(street);
+  text.appendChild(city);
+  text.appendChild(phone);
   li.appendChild(pic);
+  li.appendChild(text);
 
   li.className = "u-cf";
 

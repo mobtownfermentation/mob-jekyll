@@ -49,7 +49,7 @@ $(document).ready(function(){
   $("#fillDate").html(dateinfo);
 
 
-
+  //sticky nav (thanks @tylercrosse)
 
   var timer; //helps to slightly throttle the scroll event
   var aArray = []; //empty array for getNavHrefs
@@ -130,7 +130,25 @@ $(document).ready(function(){
     });
   });
 
-
+  //gallery_pics
+  var left = $("#gallery-pics .left");
+  var right = $("#gallery-pics .right");
+  left.on("click", function(){
+    var pics = $("#gallery-pics .pic");
+    $(pics).addClass("appear");
+    setTimeout(function(){
+      $(pics[0]).insertAfter($(pics[pics.length-1]));
+      $(pics).removeClass("appear");
+    },500)
+  })
+  right.on("click", function(){
+    var pics = $("#gallery-pics .pic");
+    $(pics).addClass("appear");
+    setTimeout(function(){
+      $($(pics[pics.length-1])).insertBefore(pics[0]);
+      $(pics).removeClass("appear");
+    },500)
+  })
 
 
 })
